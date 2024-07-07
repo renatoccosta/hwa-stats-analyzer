@@ -1,0 +1,11 @@
+services:
+  hwastatsanalyzer:
+    image: hwastatsanalyzer
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8090
+    ports:
+      - 8080:8080
+      - 8090:8090

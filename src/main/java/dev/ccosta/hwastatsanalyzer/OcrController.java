@@ -1,4 +1,4 @@
-package dev.ccosta.hwa_stats_analyzer;
+package dev.ccosta.hwastatsanalyzer;
 
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;

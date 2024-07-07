@@ -1,4 +1,4 @@
-package dev.ccosta.hwa_stats_analyzer;
+package dev.ccosta.hwastatsanalyzer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

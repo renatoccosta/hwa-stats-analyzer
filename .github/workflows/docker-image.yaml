@@ -24,7 +24,7 @@ jobs:
 
       - name: List target directory
         run: ls -la target
-        
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -38,5 +38,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
+          context: .
           push: true
           tags: ghcr.io/${{ github.repository }}/hwastatsanalyzer:latest
